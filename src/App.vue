@@ -4,8 +4,8 @@
         <div class="todo-container">
           <img alt="Vue logo" src="./assets/logo.png" width="100px" height="auto">
           <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo"/>
-          <AddTodo v-on:add-todo="addTodo" />
         </div>
+        <AddTodo v-on:add-todo="addTodo" />
   </div>
 </template>
 
@@ -60,6 +60,9 @@ export default {
   body {
     margin: 0;
     padding: 0;
+
+
+
   }
 
   #app {
@@ -72,21 +75,23 @@ export default {
     color: #2c3e50;
     font-size: 20px;
     height: 100vh;
+    display: grid;
+    grid-template-rows: 20vh 1fr 20vh;
 
-
-  }
-  .todo-container{
-      width:100%;
-      max-width:1280px;
-      /* grid-template-rows: 20vh 20vh 40vh 20vh; */
-      margin: 0 auto;
-      grid-row: 2/3;
-        
   }
   Header {
     grid-row: 1/2;
   }
-  #form {
+  .todo-container{
+
+      width:100%;
+      max-width:1280px;
+      margin: 0 auto;
+      grid-row: 2/3;
+  }
+
+
+  .form {
     grid-row: 3/4;
   }
 

@@ -1,5 +1,5 @@
 <template>
-    <div id="form">
+    <div class="form">
         <form @submit="addTodo">
             <input v-model="title" type="text" name="title" class="input" placeholder="Add a todo ...">
             <input type="submit" value="Submit" class="btn">
@@ -68,5 +68,11 @@ export default {
         background-color: rgba(65, 184, 131, 0.561);
         cursor: pointer;
         color: #2c3e50;
+    }
+    .form {
+        width:100%;
+        max-width:1280px;
+              margin: 0 auto;
+
     }
 </style>
