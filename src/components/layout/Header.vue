@@ -15,7 +15,7 @@ export default {
 
     .header {
         font-family: 'Lobster', cursive;
-        background-color:#41B883;
+        background-color:rgb(0, 0, 0);
         color:white;
         text-align: center;
         padding: 10px;
