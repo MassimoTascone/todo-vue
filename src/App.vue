@@ -56,37 +56,39 @@ export default {
 </script>
 
 <style>
- body {
-   margin: 0;
-   padding: 0;
- }
-#app {
-  margin: 0;
-  padding: 0;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  font-size: 20px;
-  height: 100vh;
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #app {
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 20px;
+    height: 100vh;
 
 
-}
-.todo-container{
-    width:100%;
-    max-width:1280px;
-    /* grid-template-rows: 20vh 20vh 40vh 20vh; */
-    margin: 0 auto;
-    grid-row: 2/3;
-      
-}
-Header {
-  grid-row: 1/2;
-}
- #form {
-   grid-row: 3/4;
- }
+  }
+  .todo-container{
+      width:100%;
+      max-width:1280px;
+      /* grid-template-rows: 20vh 20vh 40vh 20vh; */
+      margin: 0 auto;
+      grid-row: 2/3;
+        
+  }
+  Header {
+    grid-row: 1/2;
+  }
+  #form {
+    grid-row: 3/4;
+  }
 
 
 </style>

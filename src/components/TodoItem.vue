@@ -1,11 +1,15 @@
 <template>
 <!-- if todo-completed is true then change class to is-complete -->
     <div class="todo-item" v-bind:class="{'is-complete':!todo.completed}">
-        <p>
-            <input type="checkbox" v-on:change="markComplete">{{ todo.title }}
-            <button v-on:click="$emit('del-todo', todo.id)" class="del">X</button>
-        </p>
+            <input type="checkbox" v-on:change="markComplete">
 
+            <div class="todo-txt">
+                <p class="todo-content">{{ todo.title }}</p>
+            </div>
+                
+            <div class="del-btn">
+                <a v-on:click="$emit('del-todo', todo.id)" class="del"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            </div>
     </div>
     
 </template>
@@ -37,24 +41,45 @@ export default {
         padding: 5px;
         margin-bottom: 10px;
         border-radius: 15px;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr
+    }
+
+    .todo-txt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .todo-content {
+        padding: 0;
+        margin: 0;
+    }
+    .del-btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    a {
+        cursor: pointer;
+        color: #2c3e50;
+    }
+    a:hover {
+        color: rgb(148, 25, 13);
     }
     .del {
-        background:rgb(194, 4, 4);
-        color:white;
-        border: none;
-        padding: 10px 15px;
-        border-radius: 50%;
-        cursor: pointer;
-        float: right;
-        font-size:20px;
-    }
-    .del:hover {
-        background:rgb(146, 3, 3);
-
+        width: 25px;
+        height: 25px;
     }
 
     input[type=checkbox] {
         zoom: 2;
+        grid-column: 1/2;
+    }
+
+    input[type=checkbox]:hover {
+        cursor: pointer;
     }
 
 

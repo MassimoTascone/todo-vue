@@ -15,13 +15,19 @@ export default {
 
     .header {
         font-family: 'Lobster', cursive;
-        background-color:rgb(0, 0, 0);
+        background-color:#41B883;
         color:white;
-        text-align: center;
-        padding: 10px;
         margin-bottom: 10vh;
         top: 0;
-        font-size: 25px;
+        height: 5vh;
+        display: flex;
     }
 
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 25px;
+        padding-left: 20px;
+
+    }
 </style>

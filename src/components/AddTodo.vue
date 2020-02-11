@@ -34,10 +34,13 @@ export default {
 
 
 <style scoped>
+
     form {
         display: flex;
         bottom: fixed;
+        bottom: 0;
     }
+
     .input {
         flex:5;
         padding:15px;
