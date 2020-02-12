@@ -42,7 +42,7 @@ export default {
         margin-bottom: 10px;
         border-radius: 15px;
         display: grid;
-        grid-template-columns: 1fr 4fr 1fr
+        grid-template-columns: 1fr 4fr 1fr;
     }
 
     .todo-txt {
@@ -59,7 +59,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        
+
     }
 
     a {

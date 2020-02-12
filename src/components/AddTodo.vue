@@ -1,6 +1,6 @@
 <template>
     <div class="form">
-        <form @submit="addTodo">
+        <form @submit="addTodo" class="wrap-input">
             <input v-model="title" type="text" name="title" class="input" placeholder="Add a todo ...">
             <input type="submit" value="Submit" class="btn">
         </form>
@@ -35,14 +35,14 @@ export default {
 
 <style scoped>
 
-    form {
+    .wrap-input {
         display: flex;
-        bottom: fixed;
-        bottom: 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .input {
-        flex:5;
+        width: 80%;
         padding:15px;
         border: none;
         background-color: #f2f2f2;
@@ -55,13 +55,14 @@ export default {
         outline: none;
     }
     .btn {
-        flex: 1;
+        padding: 15px;
         border:none;
         background-color: #41B883;
         border-radius: 15px;
         font-size: 18px;
         font-weight: bold;
         color: white;
+        margin-right: 10px;
     }
 
     .btn:hover {
@@ -70,9 +71,9 @@ export default {
         color: #2c3e50;
     }
     .form {
-        width:100%;
-        max-width:1280px;
-              margin: 0 auto;
-
+        max-width:800px;
+        width: 100%;
     }
+
+
 </style>

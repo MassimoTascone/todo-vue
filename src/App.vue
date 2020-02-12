@@ -60,6 +60,7 @@ export default {
   body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 
 
 
@@ -74,7 +75,6 @@ export default {
     text-align: center;
     color: #2c3e50;
     font-size: 20px;
-    height: 100vh;
     display: grid;
     grid-template-rows: 20vh 1fr 20vh;
 
@@ -85,7 +85,7 @@ export default {
   .todo-container{
 
       width:100%;
-      max-width:1280px;
+      max-width:780px;
       margin: 0 auto;
       grid-row: 2/3;
   }
@@ -93,6 +93,9 @@ export default {
 
   .form {
     grid-row: 3/4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
   }
 
 
